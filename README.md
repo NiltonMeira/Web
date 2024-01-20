@@ -1,2 +1,2 @@
-# JavaScript
-Repositorio criado para estudos em JavaScript
+# Web
+Repositorio criado para estudos de Web
