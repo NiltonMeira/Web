@@ -23,6 +23,9 @@ Dentro do body pode ser criada uma tag <script> para o códifo em js
 <br> Quebra linha
 <!-- --> Comentarios 
 & pode ser utlizado para inserir simbolos, Ex &euro
+<img src="" alt=""> // É utilziado para inserir imagens dentro do site, podendo ser tanto de fontes internas quanto externas
+Ao inserir imagens ambos ficam uma ao lado da outra.
+Utlizar a tag Link favicon para mudar o favicon
 
 ## Css
 Utilizado para estilizar os dados inserido em HTML atrves de tags como body{}, h1{}
