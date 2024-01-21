@@ -8,6 +8,8 @@ Node js
 
 ## Html
 
+Sites para consultar imagens Unsplash Pexels    
+
 ### <head> 
 Aonde são criados as configurações do site, pode ser criado um tag <style> para o css dentro dela 
 <tile> armazena o titulo do site
@@ -15,8 +17,12 @@ Aonde são criados as configurações do site, pode ser criado um tag <style> pa
 ### <body>
 Aonde todos os dados do site são inseridos
 <h> Cria títulos 
-<P> Utilizado para inserir texto
+<P> Cria um parágrafo
+<hr> Cria uma linha horizontal
 Dentro do body pode ser criada uma tag <script> para o códifo em js
+<br> Quebra linha
+<!-- --> Comentarios 
+& pode ser utlizado para inserir simbolos, Ex &euro
 
 ## Css
 Utilizado para estilizar os dados inserido em HTML atrves de tags como body{}, h1{}
@@ -34,5 +40,17 @@ window.alert() // Cria um alerta para o usúario
 window.confirm() // Pede uma confirmação para o usúario 
 window.prompt() // Pede uma resposta para o usúario
 Comentatios // ou /* */
+typeof // Mostra o tipo de uma variavel
+
+### Variaveis 
+Letras maiusculas e minusculas são diferenciaveis 
+declaração de variveis var nome = 'dado'
+
+#### Tipos primitivos primordiais 
+number =  Engloba todos os tipo de números Ex: 1, 1.5
+string = Engloba todos os tipos de texto  
+boolean  = true ou false
+
+
 
 
