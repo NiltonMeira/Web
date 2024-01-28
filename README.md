@@ -27,9 +27,18 @@ Dentro do body pode ser criada uma tag <script> para o códifo em js
 <img src="" alt=""> // É utilziado para inserir imagens dentro do site, podendo ser tanto de fontes internas quanto externas
 Ao inserir imagens ambos ficam uma ao lado da outra.
 lorem - gera o texto lorem para exemplificação
+<strong> Mantem o texto em negrito
+<em> Mantem o texto em itálico
+<mark> Mantem o texto marcado
+<big> Tag depreciada que mantém o texto grande 
+<small> Tag ativa que mantém o texto pequeno
+<del> Adiciona um texto deletado 
+<ins> Adciona texto inserido, sublinhado
 
 ## Css
 Utilizado para estilizar os dados inserido em HTML atrves de tags como body{}, h1{}
+Pode ser utilziado a função style dentro de uma tag para estilizar a mesma 
+<style> Quando utilzada dento do head estiliza todas as tags do código
 
 ### Comandos 
 backgound-color: // Muda a cor do fundo 
@@ -54,7 +63,3 @@ declaração de variveis var nome = 'dado'
 number =  Engloba todos os tipo de números Ex: 1, 1.5
 string = Engloba todos os tipos de texto  
 boolean  = true ou false
-
-
-
-
