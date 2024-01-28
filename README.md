@@ -32,7 +32,7 @@ lorem - gera o texto lorem para exemplificação
 <mark> Mantem o texto marcado
 <big> Tag depreciada que mantém o texto grande 
 <small> Tag ativa que mantém o texto pequeno
-<del> Adiciona um texto deletado 
+<del> Adiciona um texto deletado</del>
 <ins> Adciona texto inserido, sublinhado
 
 ## Css
