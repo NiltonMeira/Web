@@ -1,0 +1,62 @@
+body, header, main, div, h1{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto", sans-serif;
+}
+
+header{
+    background-color: rgb(234, 115, 27);  
+    color: white;  
+    font: Roboto;    
+    padding:  50px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 900px;
+    background-color:  rgb(234, 115, 27);
+
+
+    /* EXPLICACAO: NAO TEM, VC USA OS BAG E VE SE FUNCIONA ATE FUNCIONAR!!!!!!!!! */
+    /* normalmente, flex-bos se usa pra gerar responsividade, ou seja, em qualquer tamanho de tela se adapta */
+    /* aprendeu mais em 3 minuto q no curso!!! */
+}
+
+.div1{
+    
+    width: 40%;
+    height: 100%;
+    background-color: rgb(234, 115, 27);
+    
+}
+
+.img-div1{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.div2{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(234, 115, 27);
+    padding: 20px;
+    color: white;
+    font-size: 40px;
+    
+}
+
+
+
+footer{
+    background-color: rgb(234, 115, 27)(165, 255, 156);
+}
+
+@media (max-width: 600px){
+    .div2{
+        font-size: 20px;
+    }
+}
+
