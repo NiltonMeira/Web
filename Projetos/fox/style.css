@@ -7,14 +7,16 @@
 body, html {
     height: 100%;
     font-family: "Roboto", sans-serif;  
-    background-color: #071626;
-    color: aliceblue;
+    background-color: aliceblue;
+    color: black;
 }
 
 /* Header*/
 header{
     margin: 0px;
-    padding-top: 50px;
+    padding: 30px 15px;
+    background-color: #071626;
+
     
 }
 .cabecalho{
@@ -24,6 +26,8 @@ header{
     justify-content: center;
     align-items: center;
     position: relative;
+    margin-top: 20px;
+    margin-left: 20px;    
 
 }
 
@@ -31,6 +35,7 @@ header{
     position: absolute;
     width: 10%;
     left: 0px;
+    
    
     
 }
@@ -39,7 +44,7 @@ header{
     text-align: center;
     align-self: top;
     margin: 0;
-    font-size: 3vw;
+    font-size: 3rem;
     color: #ff6900;
 }
 
@@ -53,8 +58,8 @@ header{
     list-style: none;
     gap: 50px;
     margin-top: 20px;   
-    font-size: 1.5vw;
- 
+    font-size: 1.5rem;
+    flex-wrap: wrap;
 }
 
 .navBar>li>a{
@@ -72,38 +77,68 @@ header{
 /* Main  */
 
 main{
+    width: 100%;
+}
+
+.menu{
+    width: 1200px;
+    max-width: 95%;
+    margin: auto;
+
+    padding: 50px 0;
+
     display: flex;
     justify-content: center;
-    margin-top: 60px;
+    flex-direction: column;
+    background-color: aliceblue ;
+    align-items: center;
+    border-radius: 20px;
+    gap: 50px;
 }
+
 .divCentral{
-    padding: 80px;
-    background-color: #1C3551;
-    border: ;
-    width: 80%;
+    width: 100%;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 20px; 
     gap: 60px; 
-    
+    flex-wrap: wrap;
 }
 
-.empresa{
-    width: 40%; 
+.divCentral2{
+    width: 100%;
+    display: flex;
+}
+
+
+.imagem{
+    width: 100%;
+    
+    max-width: 350px; 
     border-radius: 30px;   
 }
 
-.div1{
+
+.div{
+    width: 100%;
+    max-width: 400px; 
     line-height: 33px ;
-    font-size: 1.5vw;
-    
+    font-size: 1.2rem;
 }
 
-.titulo1{
+.titulo2{
     margin-bottom: 33px;
 }
 
 
 
+
 /* footer */
+.rodape{
+    margin-top: 100px;
+    background-color: #1C3551;
+    color: #1C3551;
+    width: 100%;
+
+}
