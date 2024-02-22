@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: "Roboto", sans-serif;  
+    background-color: #071626;
+    color: aliceblue;
+}
+
+/* Header*/
+header{
+    margin: 0px;
+    padding-top: 50px;
+    
+}
+.cabecalho{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.logo{
+    position: absolute;
+    width: 10%;
+    left: 0px;
+   
+    
+}
+
+.textoCentral{
+    text-align: center;
+    align-self: top;
+    margin: 0;
+    font-size: 3vw;
+    color: #ff6900;
+}
+
+.navBar{
+    width: 100%;
+
+    display: flex;    
+    justify-content: center ;
+    align-items: center;
+    margin: 0;
+    list-style: none;
+    gap: 50px;
+    margin-top: 20px;   
+    font-size: 1.5vw;
+ 
+}
+
+.navBar>li>a{
+    text-decoration: none;
+    color: aliceblue;
+    transition: 0.3s;
+} 
+.navBar>li>a:hover{
+    text-decoration: underline;
+    color: cyan;
+}
+
+
+
+/* Main  */
+
+main{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+.divCentral{
+    padding: 80px;
+    background-color: #1C3551;
+    border: ;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px; 
+    gap: 60px; 
+    
+}
+
+.empresa{
+    width: 40%; 
+    border-radius: 30px;   
+}
+
+.div1{
+    line-height: 33px ;
+    font-size: 1.5vw;
+    
+}
+
+.titulo1{
+    margin-bottom: 33px;
+}
+
+
+
+/* footer */

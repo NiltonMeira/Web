@@ -33,7 +33,7 @@ lorem - gera o texto lorem para exemplificação
 <big> Tag depreciada que mantém o texto grande 
 <small> Tag ativa que mantém o texto pequeno
 <del> Adiciona um texto deletado</del>
-<ins> Adciona texto inserido, sublinhado
+<ins> Adciona texto inserido, sublinhado <ins>
 
 ## Css
 Utilizado para estilizar os dados inserido em HTML atrves de tags como body{}, h1{}
