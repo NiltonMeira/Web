@@ -156,6 +156,7 @@ main{
     outline: none;
     border: none;
     transition: 0.5s;
+    padding-top: 20px;
 }
 
 .whatsbutton:hover{
