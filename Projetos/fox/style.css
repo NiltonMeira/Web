@@ -106,39 +106,72 @@ main{
     flex-wrap: wrap;
 }
 
-.divCentral2{
-    width: 100%;
-    display: flex;
-}
-
 
 .imagem{
     width: 100%;
     
-    max-width: 350px; 
+    max-width: 400px; 
     border-radius: 30px;   
 }
 
 
 .div{
     width: 100%;
-    max-width: 400px; 
-    line-height: 33px ;
+
+    max-width: 700px; 
+    line-height: 33px;
     font-size: 1.2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
 }
 
 .titulo2{
     margin-bottom: 33px;
 }
 
-
-
-
 /* footer */
+
 .rodape{
-    margin-top: 100px;
+    display: flex;
+    justify-content: center;   
     background-color: #1C3551;
-    color: #1C3551;
+    color: white;
+    width: 100%;
+}
+
+.whats{
+    width: 100%;    
+    max-width: 50px; 
+    align-items: center;
+    border-radius: 30px; 
+    flex-wrap: wrap; 
+}
+
+.whatsbutton{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    transition: 0.5s;
+}
+
+.whatsbutton:hover{
+    transform: scale(1.2);
+}
+
+.divFooter{
     width: 100%;
 
+    max-width: 700px; 
+    line-height: 33px;
+    font-size: 1.2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    gap: 60px;
 }
+
