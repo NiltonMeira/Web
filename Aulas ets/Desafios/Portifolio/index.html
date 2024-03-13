@@ -9,7 +9,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Anta&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-    <script src="./scripts/script.js"></script>
 
 </head>
 
@@ -19,16 +18,20 @@
             <p>Nilton Meira</p>
             <nav>
                 <ul id="navbar">
-                    <li>Home</li>
-                    <li>Quem sou eu?</li>
-                    <li>Minha história</li>
-                    <li>Carreira</li>
-                    <li>Hobbies</li>
-                    <li>Contato</li>
+                    <a href="#img_central"><li>Home</li></a>
+                    <a href="#quemsoueu"><li>Quem sou eu?</li></a>
+                    <a href="#minha_historia"><li>Minha história</li></a>
+                    <a href="#timeline-block"><li>Carreira</li></a>
+                    <a href="#hobbies"><li>Hobbies</li></a>
+                    <a href="#contato"><li>Contato</li></a>
                 </ul>
             </nav>
         </div>
     </header>
+
+
+
+
 
     <main>
         <div id="img_central">
@@ -103,12 +106,12 @@
         </div>
 
 
-       
+
         <div id="timeline-block">
             <h2>Carreira</h2>
 
             <div class="timeline">
-                <img src="./src/go4-removebg-preview.png" alt="" >
+                <img src="./src/go4-removebg-preview.png" alt="">
                 <div class="timeline-item">
                     <div class="timeline-content">
                         <h3>FEV - 2021</h3>
@@ -136,7 +139,7 @@
                     </div>
                 </div>
             </div>
-                 
+
             <div class="timeline">
                 <img src="./src/bosch logo.png" alt="" id="img_empresa">
                 <div class="timeline-item">
@@ -145,31 +148,30 @@
                         <p>Início como aprendiz em desenvolvimento de sistemas</p>
                     </div>
                 </div>
-            </div>   
+            </div>
         </div>
-        <div class="box_carrocel">
-            <h2>Hobbies</h2>            
-            <div class="container">
-            <button class="arrow-left control" aria-label="Previous image">◀</button>
-            <button class="arrow-right control" aria-label="Next Image">▶</button>
-            <div class="gallery-wrapper">
-                <div class="gallery">
-                <!--       <div class="item current-item cyan"></div>
-                <div class="item deeppink"></div>
-                <div class="item turquoise"></div>
-                <div class="item darkblue"></div>
-                <div class="item purple"></div> -->
-                <img src="https://source.unsplash.com/random/250x250/?beach" alt="Beach Image" class="item current-item">
-                <img src="https://source.unsplash.com/random/250x250/?animal" alt="Animal Image" class="item ">
-                <img src="https://source.unsplash.com/random/250x250/?street" alt="Street Image" class="item ">
-                <img src="https://source.unsplash.com/random/250x250/?zoo" alt="Zoo Image" class="item">
-                <img src="https://source.unsplash.com/random/250x250/?model" alt="Model Image" class="item ">
+        <div id="caixinha">
+            <div class="box_carrocel" id="hobbies">
+                <h2 id="teste1">Hobbies</h2>
+                <div class="container">
+                    <button class="arrow-left control" aria-label="Previous image">◀</button>
+                    
+                    <div class="gallery-wrapper">
+                        <div class="gallery">
+                                <img src="./src/trilha_formatada.png" alt="Beach Image" class="item current-item">                     
+                            <img src="./src/surf.png" alt="Animal Image" class="item">
+                            <img src="./src/voluntariado_formatado.png" alt="Street Image" class="item">
+                            <img src="./src/musica_formatado.png" alt="Zoo Image" class="item">
+                            <img src="./src/leitura.png" alt="Model Image" class="item ">
+                        </div>
+                    <button class="arrow-right control" aria-label="Next Image">▶</button>
+                    </div>
                 </div>
-            </div>
-            </div>
-            
         </div>
-        <div class="contato">
+        
+
+        </div>
+        <div class="contato" id="contato">
             <div class="contato2">
                 <h2>Contato</h2>
                 <form action="">
@@ -181,20 +183,25 @@
                 </form>
                 <h3>Mensage</h3>
                 <form action="">
-                    <textarea name="mensagem" id="email" cols="150" rows="10" placeholder="Mensagem" class="msg_text"></textarea>
+                    <textarea name="mensagem" id="email" cols="150" rows="10" placeholder="Mensagem"
+                        class="msg_text"></textarea>
                 </form>
-            </div>           
+            </div>
 
-        </div>     
+        </div>
+        
+
+
     </main>
 
     <footer>
         <div>
-            
+            <h2>Nilton Meira</h2>
         </div>
 
     </footer>
 
+    <script src="./scripts/script.js"></script>
 </body>
 
 </html>

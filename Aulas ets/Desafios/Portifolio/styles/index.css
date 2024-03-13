@@ -14,7 +14,7 @@ html {
 }
 
 header {
-    font-size: 1.2rem;
+    font-size: 1rem;
     position: fixed;
     width: 100%;
     z-index: 1;
@@ -35,6 +35,7 @@ footer {
     background-color:
         #181818;
     color: white;
+    align-items: center;
 }
 
 #navbar {
@@ -42,6 +43,49 @@ footer {
     list-style: none;
     gap: 50px;
 
+}
+
+#navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;  
+  transition: background-color 0.3s;
+}
+
+#navbar a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+
+
+#navbar a.active {
+  background-color: #4CAF50;
+}
+
+/* Adiciona uma animação ao hover */
+#navbar li {
+  position: relative;
+}
+
+#navbar li:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s;
+}
+
+#navbar li:hover:before {
+  width: 100%;
 }
 
 #eu {
@@ -210,45 +254,42 @@ footer {
 }
 
 .container {
-    position: relative;
+    position: relative;    
     padding: 15px;
     max-width: 640px;
     margin: 0 auto;
   }
   
   .gallery-wrapper {
-    overflow-x: auto;
+    overflow-x: hidden;    
+    align-items: center;
   }
   
-  .arrow-left,
-  .arrow-right {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: auto;
-    bottom: 0;
-    font-size: 20px;
-    line-height: 250px;
-    width: 40px;
-    color: #fff;
-    transition: all 600ms ease-in-out;
-    background: linear-gradient(to left, transparent 0%, white 200%);
-    opacity: 0.1;
-    cursor: pointer;
-    border: none;
-  }
-  
-  .arrow-left:hover,
-  .arrow-right:hover {
-    opacity: 1;
-  }
-  
-  .arrow-right {
-    right: 0;
-    left: auto;
-    text-align: right;
-    background: linear-gradient(to right, transparent 0%, white 200%);
-  }
+.arrow-left,
+.arrow-right {    
+  top: 50%; /* Posiciona os botões verticalmente ao centro */
+  transform: translateY(-50%); /* Ajusta a posição vertical dos botões */
+  width: 40px;
+  height: 40px; /* Ajusta o tamanho dos botões conforme necessário */
+  font-size: 20px;
+  color: #fff;
+  background: linear-gradient(to left, transparent 0%, white 200%);
+  opacity: 0.1;
+  cursor: pointer;
+  border: none;
+  position: absolute; /* Posicionamento absoluto em relação ao container pai */
+  z-index: 1; /* Garante que os botões fiquem sobrepostos ao conteúdo do carrossel */
+  transition: all 600ms ease-in-out;
+}
+
+.arrow-left {
+  left: 0; /* Posiciona o botão esquerdo no início do container */
+}
+
+.arrow-right {
+  right: 0; /* Posiciona o botão direito no final do container */
+  background: linear-gradient(to right, transparent 0%, white 200%);
+}
   
   .gallery {
     display: flex;
@@ -257,33 +298,17 @@ footer {
   }
   
   .item {
-    width: 500px;
-    height: 500px;
+    width: 700px;
+    height: 700px;
     flex-shrink: 0;
     transition: all 600ms ease-in-out;
-    opacity: 0.5;
+    opacity: 0.6;
+    padding-top: 130px;
   }
   
   .current-item {
     opacity: 1;
-  }
-  
-  /* This is from w3schools */
-  /* 
-  https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
-  /* Hide scrollbar for Chrome, Safari and Opera */
-  .gallery-wrapper::-webkit-scrollbar {
-    display: none;
-    
-  }
-  
-  /* Hide scrollbar for IE, Edge and Firefox */
-  .gallery-wrapper {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-    
-    
-  }
+  }  
   
   .cyan {
     background: cyan;
@@ -308,15 +333,14 @@ footer {
   .box_carrocel{
     background-color: #333333;
     color: white;
-    padding: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 30px;
+    padding: 30px;
+    width: 100vh;
     
-
- 
   }
 
   .contato{
@@ -326,6 +350,7 @@ footer {
     align-items: center;
     width: 100%;
     height: 600px;
+    padding: 30px;
   }
 
   .contato2{
@@ -404,7 +429,7 @@ textarea:focus {
  .main_box{
   max-width: 768px;
   width: 100%;
-  align-items: unset;
+  align-items: center;
  }
 
  #img_central{
@@ -444,6 +469,11 @@ textarea:focus {
   max-width: 1024px;
 }
 }
+
+#caixinha{
+  width: 100%;
+  background-color: #333333;
+}
  
 
  
@@ -460,5 +490,21 @@ textarea:focus {
   h5 {
     color: darkorchid;
   }
+}
+
+.box_carrocel {
+  position: relative; /* Adicione esta propriedade para permitir posicionamento absoluto dos botões */
+  background-color: #333333;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 30px;
+  overflow: hidden; /* Para garantir que os botões posicionados absolutamente não saiam do container */
+  width: 700px; /* Ajuste conforme necessário */
+  max-width: 100%; /* Garante que o container não ultrapasse o tamanho máximo da tela */
+  margin: auto; /* Centraliza o container */
 }
 
