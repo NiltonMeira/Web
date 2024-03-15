@@ -5,12 +5,27 @@
 
 .img_pilotos{
     width: 100%;
+    transition: 0.5s;
+    z-index: 0;
 }
 
 .img_pilotos:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
-.container{
-   
+.col{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
+
+.texto_pilotos{
+    position: absolute;    
+    background-color: black;
+    z-index: 1;
+    color: antiquewhite;
+
+}
+
