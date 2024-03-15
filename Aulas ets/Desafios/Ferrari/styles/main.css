@@ -1,4 +1,16 @@
 .d-block{
-    height: 94.1vh;
+    height: 91.8vh;
     object-fit: cover;
+}
+
+.img_pilotos{
+    width: 100%;
+}
+
+.img_pilotos:hover{
+    transform: scale(1.1);
+}
+
+.container{
+   
 }
